@@ -7,6 +7,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class UniversityApp extends Application {
 
@@ -14,6 +16,7 @@ public class UniversityApp extends Application {
     private static final int SCENE_WIDTH = 300;
     private static final int SCENE_HEIGHT = 250;
     // TODO 4.1: Initialize the Logger
+    static Logger logger=LogManager.getLogger(UniversityApp.class);
 
     @Override
     public void start(Stage primaryStage) {
@@ -45,6 +48,7 @@ public class UniversityApp extends Application {
 
     public static void startApp(String[] args) {
         // TODO 4.2: Log the start of the app at the info level
+        logger.info("1");
         launch(args);
     }
 }
