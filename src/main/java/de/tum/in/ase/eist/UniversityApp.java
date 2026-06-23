@@ -40,7 +40,7 @@ public class UniversityApp extends Application {
 
     public String getButtonText() {
         // TODO 1: Fix the returned String
-        return "Hello World";
+        return "Hello EIST";
     }
 
     public static void startApp(String[] args) {
